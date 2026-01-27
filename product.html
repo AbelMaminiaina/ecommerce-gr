@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail Produit - E-Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-top-left">
+                        <span>Livraison gratuite dès 50€</span>
+                    </div>
+                    <div class="header-top-right">
+                        <a href="#">Assistance</a>
+                        <a href="#">Pour les professionnels <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">E-SHOP</a>
+                    </div>
+
+                    <!-- Navigation Menu -->
+                    <nav class="main-nav">
+                        <ul class="nav-menu">
+                            <li><a href="#">Packs</a></li>
+                            <li><a href="tech.html">Tech</a></li>
+                            <li><a href="#">Bureau</a></li>
+                            <li><a href="#">Bien-être</a></li>
+                            <li><a href="#">Mode</a></li>
+                            <li><a href="#">Maison</a></li>
+                            <li><a href="#">Cadeaux et Fêtes</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Right Section: Search + Icons -->
+                    <div class="header-right">
+                        <!-- Search Bar -->
+                        <div class="search-bar">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Recherche">
+                        </div>
+
+                        <!-- Header Icons -->
+                        <div class="header-icons">
+                            <a href="#" class="icon-link cart-icon" title="Panier">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                            <a href="#" class="icon-link" title="Mon compte">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html">Accueil</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="#">Mode</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>T-Shirt Coton Bio Premium</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- PRODUCT DETAIL SECTION -->
+    <section class="product-detail-section">
+        <div class="container">
+            <div class="product-detail-layout">
+                <!-- LEFT: Product Gallery -->
+                <div class="product-gallery">
+                    <div class="gallery-thumbnails">
+                        <div class="thumbnail active">
+                            <div class="thumbnail-placeholder">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="thumbnail-placeholder">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="thumbnail-placeholder">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="thumbnail-placeholder">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="thumbnail-placeholder">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-main">
+                        <div class="main-image-placeholder">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <button class="gallery-nav gallery-prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="gallery-nav gallery-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Product Info -->
+                <div class="product-info-detail">
+                    <div class="product-header">
+                        <h1 class="product-title-detail">T-Shirt Coton Bio Premium</h1>
+                        <button class="wishlist-btn-detail"><i class="far fa-heart"></i></button>
+                    </div>
+
+                    <p class="product-subtitle">Coton biologique certifié GOTS, coupe regular</p>
+
+                    <div class="product-price-section">
+                        <span class="price-current">39,90 €</span>
+                        <span class="price-original">49,90 €</span>
+                        <span class="price-unit">l'unité</span>
+                        <span class="stock-status in-stock"><i class="fas fa-circle"></i> En stock</span>
+                    </div>
+
+                    <div class="payment-options">
+                        <span>3 x 13,30 € (sans frais) avec</span>
+                        <a href="#" class="payment-link">Alma</a>
+                    </div>
+
+                    <!-- Options Selection -->
+                    <div class="product-options">
+                        <!-- Color Option -->
+                        <div class="option-group">
+                            <label>Couleur :</label>
+                            <div class="color-options">
+                                <button class="color-btn active" style="background-color: #1a1a2e;" title="Noir"></button>
+                                <button class="color-btn" style="background-color: #ffffff; border: 1px solid #ddd;" title="Blanc"></button>
+                                <button class="color-btn" style="background-color: #2d5a27;" title="Vert"></button>
+                                <button class="color-btn" style="background-color: #4a5568;" title="Gris"></button>
+                            </div>
+                            <span class="option-value">Noir</span>
+                        </div>
+
+                        <!-- Size Option -->
+                        <div class="option-group">
+                            <label>Taille :</label>
+                            <div class="size-select-wrapper">
+                                <select class="size-select">
+                                    <option value="">Sélectionner une taille</option>
+                                    <option value="XS">XS</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <!-- Quantity Option -->
+                        <div class="option-group quantity-group">
+                            <label>Qté :</label>
+                            <div class="quantity-selector">
+                                <button class="qty-btn active">1</button>
+                                <button class="qty-btn">2</button>
+                                <button class="qty-btn">3</button>
+                                <button class="qty-btn qty-plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Select Option Banner -->
+                    <div class="select-option-banner">
+                        <i class="fas fa-exclamation-circle"></i>
+                        Sélectionner une option
+                    </div>
+
+                    <!-- Add to Cart -->
+                    <button class="btn-add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Ajouter au panier
+                    </button>
+
+                    <!-- Delivery Info -->
+                    <div class="delivery-info">
+                        <i class="fas fa-truck"></i>
+                        <span>Chez vous dans 3 à 6 jours ouvrés</span>
+                        <span class="delivery-dots">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                        </span>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button class="btn-secondary-action">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Réserver en boutique
+                        </button>
+                        <button class="btn-secondary-action">
+                            <i class="fas fa-swatchbook"></i>
+                            Commander un échantillon
+                        </button>
+                    </div>
+
+                    <!-- Expert Section -->
+                    <div class="expert-section">
+                        <h4>VOTRE EXPERT E-SHOP</h4>
+                        <div class="expert-questions">
+                            <button class="expert-question">
+                                <i class="fas fa-sparkles"></i>
+                                De quel matériau est fait ce t-shirt ?
+                            </button>
+                            <button class="expert-question">
+                                <i class="fas fa-sparkles"></i>
+                                Comment entretenir ce vêtement ?
+                            </button>
+                        </div>
+                        <div class="ask-question">
+                            <input type="text" placeholder="Posez n'importe quelle question...">
+                            <button><i class="fas fa-arrow-up"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT DESCRIPTION SECTION -->
+    <section class="product-description-section">
+        <div class="container">
+            <!-- Press Mentions -->
+            <div class="press-mentions">
+                <h3>Ils parlent de nous</h3>
+                <div class="press-logos">
+                    <span class="press-logo">ELLE</span>
+                    <span class="press-logo">madame</span>
+                    <span class="press-logo">Marie Claire</span>
+                    <span class="press-logo">IDEAT</span>
+                </div>
+            </div>
+
+            <!-- Product Description -->
+            <div class="product-long-description">
+                <h2>Réalisé à partir de coton biologique certifié, ce t-shirt vous accompagnera avec style au quotidien.</h2>
+                <p>Le tissu doux et respirant offre un confort optimal tout au long de la journée. Sa coupe regular s'adapte à toutes les morphologies pour un look décontracté et élégant. Ce t-shirt est confectionné dans le respect de l'environnement, avec des matières premières durables et une fabrication éthique.</p>
+            </div>
+
+            <!-- Accordion Sections -->
+            <div class="product-accordions">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>DÉTAILS</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>100% Coton biologique certifié GOTS</li>
+                            <li>Grammage : 180g/m²</li>
+                            <li>Coupe regular fit</li>
+                            <li>Col rond renforcé</li>
+                            <li>Coutures doubles</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>ENTRETIEN</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Lavage en machine à 30°C</li>
+                            <li>Ne pas utiliser de javel</li>
+                            <li>Séchage à basse température</li>
+                            <li>Repassage à température moyenne</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>GUIDE DES TAILLES</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>XS: Tour de poitrine 86-91cm | S: 91-96cm | M: 96-101cm | L: 101-106cm | XL: 106-111cm | XXL: 111-116cm</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>LIVRAISON & RETOURS</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Livraison standard gratuite dès 50€</li>
+                            <li>Livraison express en 24-48h : 5,90€</li>
+                            <li>Retours gratuits sous 30 jours</li>
+                            <li>Échange possible en boutique</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RELATED PRODUCTS -->
+    <section class="section products-section">
+        <div class="container">
+            <div class="section-header-inline">
+                <h2>Vous aimerez aussi</h2>
+                <a href="#" class="see-all-link">Voir tout</a>
+            </div>
+            <div class="products-grid-etsy">
+                <a href="product.html" class="product-card-etsy">
+                    <div class="product-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">T-Shirt Col V Coton Bio</h3>
+                        <div class="product-price">
+                            <span class="current-price">34,90 €</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html" class="product-card-etsy">
+                    <div class="product-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-vest"></i>
+                        </div>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Polo Classic Fit</h3>
+                        <div class="product-price">
+                            <span class="current-price">49,90 €</span>
+                            <span class="original-price">59,90 €</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html" class="product-card-etsy">
+                    <div class="product-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">T-Shirt Oversize</h3>
+                        <div class="product-price">
+                            <span class="current-price">39,90 €</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html" class="product-card-etsy">
+                    <div class="product-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">T-Shirt Manches Longues</h3>
+                        <div class="product-price">
+                            <span class="current-price">44,90 €</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html" class="product-card-etsy">
+                    <div class="product-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Pack 3 T-Shirts Basiques</h3>
+                        <div class="product-price">
+                            <span class="current-price">79,90 €</span>
+                            <span class="original-price">99,90 €</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-larq">
+        <div class="footer-main-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-newsletter">
+                        <div class="footer-logo">E-SHOP</div>
+                        <p class="footer-newsletter-text">Recevez des offres exclusives, des informations sur nos produits et plus encore lorsque vous vous abonnez.</p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Entrez votre adresse email">
+                            <button type="submit">Souscrire</button>
+                        </div>
+                    </div>
+                    <div class="footer-links-columns">
+                        <div class="footer-column">
+                            <a href="#">À propos</a>
+                            <a href="#">Commentaires</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Presse</a>
+                        </div>
+                        <div class="footer-column">
+                            <a href="#">FAQ</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Détaillants</a>
+                            <a href="#">Cadeaux pro</a>
+                        </div>
+                        <div class="footer-column">
+                            <a href="#">Ambassadeurs</a>
+                            <a href="#">Affiliés</a>
+                        </div>
+                    </div>
+                    <div class="footer-promo-card">
+                        <div class="promo-card-content">
+                            <div class="promo-card-icon">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <h3>Cadeaux pro</h3>
+                            <p>L'originalité est indémodable</p>
+                            <a href="#" class="btn-promo">Obtenez un devis</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-brand-section">
+            <div class="container">
+                <div class="footer-brand">
+                    <span class="brand-label">A company of</span>
+                    <span class="brand-name">E-SHOP</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="footer-bottom-left">
+                        <div class="country-selector">
+                            <span class="flag-icon">🇫🇷</span>
+                            <span>France</span>
+                        </div>
+                        <div class="footer-legal">
+                            <span>&copy; E-Shop, 2026</span>
+                            <a href="#">Conditions</a>
+                            <a href="#">Confidentialité</a>
+                            <a href="#">Cookies</a>
+                            <a href="#">Accessibilité</a>
+                            <a href="#">Mentions légales</a>
+                            <a href="#">Paramètres de consentement</a>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Accordion functionality
+        document.querySelectorAll('.accordion-header').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+
+        // Thumbnail click
+        document.querySelectorAll('.thumbnail').forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+                thumb.classList.add('active');
+            });
+        });
+
+        // Quantity selector
+        document.querySelectorAll('.qty-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (!btn.classList.contains('qty-plus')) {
+                    document.querySelectorAll('.qty-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                }
+            });
+        });
+
+        // Color selector
+        document.querySelectorAll('.color-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.color-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
