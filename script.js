@@ -33,11 +33,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Auto-slide for hero (optional)
-    setInterval(() => {
-        heroIndicators[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % heroIndicators.length;
-        heroIndicators[currentSlide].classList.add('active');
-    }, 5000);
+    if (heroIndicators.length > 0) {
+        setInterval(() => {
+            heroIndicators[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % heroIndicators.length;
+            heroIndicators[currentSlide].classList.add('active');
+        }, 5000);
+    }
 
     // ===== PRODUCT TABS =====
     const tabButtons = document.querySelectorAll('.tab-btn');

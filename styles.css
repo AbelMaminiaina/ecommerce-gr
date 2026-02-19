@@ -6,18 +6,18 @@
 }
 
 :root {
-    /* Primary Colors - Rose/Pink */
-    --primary: #e91e63;
-    --primary-dark: #c2185b;
-    --primary-light: #f48fb1;
+    /* Primary Colors - Gris */
+    --primary: #6b7280;
+    --primary-dark: #4b5563;
+    --primary-light: #9ca3af;
 
     /* Secondary Colors */
     --secondary: #1a1a2e;
     --secondary-light: #2d2d44;
 
-    /* Accent Colors */
-    --accent: #f59e0b;
-    --accent-light: #fbbf24;
+    /* Accent Colors - Bleu dégradé */
+    --accent: #3b82f6;
+    --accent-light: #60a5fa;
 
     /* Background Gradient Colors - Veepee Style */
     --bg-gradient-start: #fce4ec;
@@ -84,7 +84,7 @@ body {
     font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.3px;
-    color: var(--gray-700);
+    color: var(--secondary);
     background: var(--white);
     min-height: 100vh;
 }
@@ -126,9 +126,9 @@ input {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 0 var(--spacing-lg);
+    padding: 0 var(--spacing-xl);
 }
 
 /* ===== HEADER ===== */
@@ -155,7 +155,7 @@ input {
 }
 
 .header-top-left span {
-    color: var(--gray-500);
+    color: var(--secondary);
 }
 
 .header-top-right {
@@ -165,7 +165,7 @@ input {
 }
 
 .header-top-right a {
-    color: var(--gray-700);
+    color: var(--secondary);
     font-size: 0.75rem;
     transition: color var(--transition-fast);
 }
@@ -188,18 +188,24 @@ input {
 .header-content {
     display: flex;
     align-items: center;
-    gap: var(--spacing-2xl);
+    justify-content: center;
+    gap: var(--spacing-xl);
 }
 
 /* Logo - Style Samsung (texte simple) */
+.logo {
+    flex-shrink: 0;
+}
+
 .logo a {
     font-family: var(--font-heading);
-    font-size: 1.75rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 700;
     color: var(--secondary);
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     transition: color var(--transition-fast);
+    white-space: nowrap;
 }
 
 .logo a:hover {
@@ -214,23 +220,29 @@ input {
 .nav-menu {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: var(--spacing-xl);
 }
 
 .nav-menu a {
     font-family: var(--font-body);
     font-weight: 400;
-    font-size: 0.8125rem;
+    font-size: 1rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--gray-700);
+    letter-spacing: 0.5px;
+    color: var(--secondary);
     padding: var(--spacing-sm) 0;
     position: relative;
     transition: color var(--transition-fast);
+    white-space: nowrap;
 }
 
 .nav-menu a:hover {
     color: var(--secondary);
+}
+
+.nav-menu a.nav-bold {
+    font-weight: 600;
 }
 
 /* Header Right Section */
@@ -722,7 +734,7 @@ input {
 
 .section-header p {
     font-size: 1.125rem;
-    color: var(--gray-500);
+    color: var(--gray-700);
     max-width: 600px;
     margin: 0 auto;
 }
@@ -920,7 +932,7 @@ input {
     font-family: var(--font-body);
     font-size: 0.8125rem;
     font-weight: 400;
-    color: var(--gray-700);
+    color: var(--secondary);
     line-height: 1.5;
     letter-spacing: 0.3px;
     margin-bottom: var(--spacing-xs);
@@ -1002,7 +1014,7 @@ input {
 
 .category-content p {
     font-size: 0.875rem;
-    color: var(--gray-500);
+    color: var(--gray-700);
     margin-bottom: var(--spacing-md);
 }
 
@@ -1025,9 +1037,9 @@ input {
 
 /* ===== PROMO BANNER ===== */
 .promo-banner {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    background: linear-gradient(135deg, #fce4ec 0%, #e8eaf6 40%, #e3f2fd 70%, #f3e5f5 100%);
     padding: var(--spacing-2xl) 0;
-    color: var(--white);
+    color: var(--secondary);
     position: relative;
     overflow: hidden;
     border-radius: var(--radius-xl);
@@ -1057,7 +1069,8 @@ input {
 
 .promo-tag {
     display: inline-block;
-    background: rgba(255,255,255,0.2);
+    background: var(--secondary);
+    color: var(--white);
     padding: var(--spacing-xs) var(--spacing-md);
     border-radius: var(--radius-full);
     font-size: 0.875rem;
@@ -1077,7 +1090,8 @@ input {
 }
 
 .promo-text strong {
-    background: rgba(255,255,255,0.2);
+    background: var(--secondary);
+    color: var(--white);
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--radius-sm);
 }
@@ -1089,13 +1103,13 @@ input {
 .promo-placeholder {
     width: 200px;
     height: 200px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.05);
     border-radius: var(--radius-xl);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 5rem;
-    color: rgba(255,255,255,0.3);
+    color: var(--secondary);
 }
 
 /* ===== VALUES SECTION ===== */
@@ -1149,7 +1163,7 @@ input {
 
 .value-card p {
     font-size: 0.875rem;
-    color: var(--gray-500);
+    color: var(--gray-700);
 }
 
 /* ===== REVIEWS SECTION ===== */
