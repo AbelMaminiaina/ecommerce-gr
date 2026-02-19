@@ -24,20 +24,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const heroIndicators = document.querySelectorAll('.hero .indicator');
     let currentSlide = 0;
 
-    heroIndicators.forEach((indicator, index) => {
-        indicator.addEventListener('click', function() {
-            heroIndicators[currentSlide].classList.remove('active');
-            currentSlide = index;
-            heroIndicators[currentSlide].classList.add('active');
+    if (heroIndicators && heroIndicators.length > 0) {
+        heroIndicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', function() {
+                if (heroIndicators[currentSlide]) {
+                    heroIndicators[currentSlide].classList.remove('active');
+                }
+                currentSlide = index;
+                if (heroIndicators[currentSlide]) {
+                    heroIndicators[currentSlide].classList.add('active');
+                }
+            });
         });
-    });
 
-    // Auto-slide for hero (optional)
-    if (heroIndicators.length > 0) {
+        // Auto-slide for hero (optional)
         setInterval(() => {
-            heroIndicators[currentSlide].classList.remove('active');
+            if (heroIndicators[currentSlide]) {
+                heroIndicators[currentSlide].classList.remove('active');
+            }
             currentSlide = (currentSlide + 1) % heroIndicators.length;
-            heroIndicators[currentSlide].classList.add('active');
+            if (heroIndicators[currentSlide]) {
+                heroIndicators[currentSlide].classList.add('active');
+            }
         }, 5000);
     }
 
